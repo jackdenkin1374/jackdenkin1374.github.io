@@ -1,0 +1,131 @@
+.header {
+    margin: auto;
+    width: 100%;
+}
+
+.page_container_home {
+    position: relative;
+}
+
+/*Navigation bar*/
+.nav{
+    background-color: #333;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+.nav a:hover {
+    background-color: #4CAF50;
+    color: black;
+}
+
+.rightFloat{
+    float: right;
+}
+
+.leftFloat{
+    float: left;
+}
+
+.clubMascot{
+    width: 300px;
+    height: 300px;
+    padding-right: 30px;
+}
+.clubMascot[id="wide"]{
+    width: 600px;
+    padding-right: 10px;
+}
+.conMascot{
+    width: 400px;
+    height: 400px;
+}
+
+.contentBox{
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 5px solid #333;
+    margin: auto;
+    width: 85%;
+    background-color: #c8e4bd;
+}
+.contentBox[id="socialMediaLinks"]{
+    text-align: center;
+}
+
+.socialMedia{
+    padding: 5px 15px;
+    width: 128px;
+}
+.socialMedia[id="height"]{
+    width: 512px;
+    height: 128px;
+}
+
+.animeList{
+    padding: 0;
+    width: 220px;
+    height: 320px;
+}
+
+.discordTable{
+    border: 1px solid #333;
+    width: 100%;
+    table-layout: fixed;
+}
+.discordTable th{
+    border-bottom: 1px solid #333;
+}
+.discordTable td{
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
+    padding-left: 10px;
+}
+
+body{
+    background-color: #92cf7b;
+}
+
+h1{
+    font-family: Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+p, li{
+    font-family: Georgia, serif;
+    font-size: 18px;
+}
+
+table, tr, td{
+    margin: auto;
+    padding: 0;
+    font-size: 18px;
+}
+
+figcaption{
+    text-align: center;
+}
+
+footer {
+    clear: both;
+    background-color: rgb(122, 122, 122);
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}

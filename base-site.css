@@ -1,0 +1,126 @@
+.header {
+    margin: auto;
+    width: 100%;
+}
+
+.placeholderHeader{
+    height: 100px;
+    margin: auto;
+}
+
+/*Navigation bar*/
+.nav{
+    background-color: #333;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+.nav a:hover {
+    background-color: #4CAF50;
+    color: black;
+}
+
+.column{
+    float: left;
+    padding-left: 10px;
+}
+
+.column[id="leftCol"]{
+    width: 70%;
+}
+.column[id="rightCol"]{
+    width: 25%;
+    padding-left: 20px;
+}
+
+.thirdcolumn {
+    float: left;
+    width: 32%;
+    padding: 0px 10px;
+}
+
+.halfcolumn{
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.twitter-timeline{
+    float: right;
+}
+
+.contentBox{
+    padding: 0px 25px;
+    border: 5px solid #333;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 85%;
+    background-color: #c8e4bd;
+}
+.contentBox[id="height"]{
+    height: 100vh;
+    
+}
+
+main{
+    padding: 10px 25px;
+}
+
+body{
+    background-color: #92cf7b;
+}
+
+h1{
+    font-family: Helvetica, sans-serif;
+    font-size: 40px;
+}
+h2{
+    font-size: 32px;
+}
+h3{
+    font-size: 24px;
+}
+
+p, li{
+    font-family: Georgia, serif;
+    font-size: 18px;
+}
+
+table, tr, td{
+    margin: auto;
+    padding: 0;
+    font-size: 18px;
+}
+
+figcaption{
+    text-align: center;
+}
+
+footer {
+    clear: both;
+    background-color: rgb(122, 122, 122);
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
