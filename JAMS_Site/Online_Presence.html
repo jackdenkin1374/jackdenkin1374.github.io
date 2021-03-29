@@ -6,6 +6,9 @@
 	<title>Japanese Anime & Manga Society</title>
 	<link rel="stylesheet" href="JAMS-Site.css" />
 	<script src="JAMS-Site.js"></script>
+	<!-- Scripts from https://jqueryui.com/ -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -22,159 +25,168 @@
 </header>
 
 <main>
-	<br>
-
-	<div class="contentBox">
-		<a href="https://www.facebook.com/groups/unccjams" target="_blank" rel="noopener noreferrer"><h2>Facebook</h2></a>
-		<p>Before the existence of Discord, the club utilize Facebook as their primary social media platform.<br>
-		It is still maintained as a secondary social media in case people who joins the club prefer not to use Discord.<br>
-		</p>
+	<!-- Scripts from https://jqueryui.com/ -->
+	<!-- Tab widget - upon selecting a tab header, it will switch to a different content  -->
+	<div id="tabs">
+		<!-- Header -->
+		<ul class="nav" id="Sub1">
+			<li><a href="#tabs-1">Facebook</a></li>
+			<li><a href="#tabs-2">NinerEngage</a></li>
+			<li><a href="#tabs-3">Discord</a></li>
+		</ul>
+		<br>
+		<!-- Content -->
+		<div id="tabs-1">
+			<div class="contentBox">
+				<a href="https://www.facebook.com/groups/unccjams" target="_blank" rel="noopener noreferrer"><h2>Facebook</h2></a>
+				<p>Before the existence of Discord, the club utilize Facebook as their primary social media platform.<br>
+				It is still maintained as a secondary social media in case people who joins the club prefer not to use Discord.<br>
+				</p>
+			</div>
+		</div>
+		<div id="tabs-2">
+			<div class="contentBox">
+				<a href="https://ninerengage.uncc.edu/organization/japanese-anime-and-manga-society" target="_blank" rel="noopener noreferrer">
+					<h2>NinerEngage</h2>
+				</a>
+				<p>A club page for UNCC related rules and maintence. Here you will find the club's constitution and possibly current officers.</p>
+			</div>
+		</div>
+		<div id="tabs-3">
+			<div class="contentBox">
+				<a href="https://discord.com/invite/tekSGqd" target="_blank" rel="noopener noreferrer"><h2>Discord</h2></a>
+				<p>The primary social media platform that the club uses. It is much more active and features a wide array of channels to help 
+				newcomers find new friends or participate in the club.<br> 
+				Here are some explanations for the various channels in the server.<br>
+				</p>
+				<table class="discordTable">
+					<tr>
+						<th>Catergories</th>
+						<th>Channels</th>
+						<th>Types of Users</th>
+					</tr>
+					<tr>
+						<td>
+							<strong>General</strong><br>
+							Here are several important channels for the server regarding rules, club annoucements and a general purpose chat.<br>
+							<br>
+						</td>
+						<td>
+							<strong>Rules</strong><br>
+							Important rules pertaining to the server and the club as well.<br>
+							<br>
+							<strong>Annoucements</strong><br>
+							Any pings regarding ongoing club events or important news about the club or server.<br>
+							<br>
+							<strong>General</strong><br>
+							Landing channel where newcomers first arrive into the server.<br>
+							<br>
+							<strong>Member</strong><br>
+							Club members' focused chat.<br>
+							<br>
+						</td>
+						<td rowspan="6">
+							There are several types of users in this server.<br>
+							<br>
+							<strong>General</strong><br>
+							Newcomers looking around.<br>
+							<br>
+							<strong>Member</strong><br>
+							Due paying members of the club. They are given access to some channels that non members cannot accessed.<br>
+							<br>
+							<strong>Discord Nep</strong><br>
+							Moderators for the server in case the officers of the club are unable to deal with any issues that may occur in the 
+							server.<br>
+							<br>
+							<strong>Bottom Nep</strong><br>
+							The 3 or 4 officers of the club, Treasurer, Vice-President, Public Relations and Secretary.<br>
+							<br>
+							<strong>Top Nep</strong><br>
+							The President of the club.<br>
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>Campus</strong><br>
+							These channels are for any on campus related events for students to receive help with school work or learn Japanese.<br>
+							As well as club related meetings, such as Cosplay Corner and the regular Wednesday meetings.<br>
+							<br>
+						</td>
+						<td>
+							<strong>School</strong><br>
+							General channel for school related discussions, whether its help finding classes, solutions or important events 
+							happening on campus.<br>
+							<br>
+							<strong>Cosplay Corner</strong><br>
+							General discussion chat for Cosplay Corner Members as well as any cosplay projects from other users.<br>
+							<br>
+							<strong>Japanese</strong><br>
+							A channel to help other people learn Japanese with live practice.<br>
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>Fun</strong><br>
+							Here are various channels for users to chat about fun related topics, such as gaming, memes, anime, music and so on.<br>
+							<br>
+						</td>
+						<td>
+							<strong>Games</strong><br>
+							General discussion chat for games or for others to find other people to play games with.<br>
+							<br>
+							<strong>Anime & Manga</strong><br>
+							General discussion chat for anime and manga, especially for seasonal shows.<br>
+							<br>
+							<strong>Cons & Merch</strong><br>
+							A channel where other users showcase their wares or talk of local conventions that occurs in the Charlotte area.<br>
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>Mobile Games</strong><br>
+							A small selection of channels where users can talked on and on about certain mobile games which merits its own 
+							channel.<br>
+							There use to be a wide amount of channels but due to inactivity or sparse conversations, the officers has reduced
+							the number of channels in this catergory.<br>
+							<br>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<strong>Nep Noises</strong><br>
+							Voice channels for meetings, game sessions or just chatting.<br>
+							<br>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<strong>Archive</strong><br>
+							Old channels where users no longer post in, but still hold some importance to the club.<br>
+							<br>
+						</td>
+						<td>
+							<strong>KiraKiraCon</strong><br>
+							General planning chat for any members to share details about KKC to anyone else.<br>
+							<br>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
 	</div>
-
-	<br>
-
-	<div class="contentBox">
-		<a href="https://ninerengage.uncc.edu/organization/japanese-anime-and-manga-society" target="_blank" rel="noopener noreferrer">
-			<h2>NinerEngage</h2>
-		</a>
-		<p>A club page for UNCC related rules and maintence. Here you will find the club's constitution and possibly current officers.</p>
-	</div>
-
-	<br>
-
-	<div class="contentBox">
-		<a href="https://discord.com/invite/tekSGqd" target="_blank" rel="noopener noreferrer"><h2>Discord</h2></a>
-		<p>The primary social media platform that the club uses. It is much more active and features a wide array of channels to help 
-		newcomers find new friends or participate in the club.<br> 
-		Here are some explanations for the various channels in the server.<br>
-		</p>
-		<table class="discordTable">
-			<tr>
-				<th>Catergories</th>
-				<th>Channels</th>
-				<th>Types of Users</th>
-			</tr>
-			<tr>
-				<td>
-					<strong>General</strong><br>
-					Here are several important channels for the server regarding rules, club annoucements and a general purpose chat.<br>
-					<br>
-				</td>
-				<td>
-					<strong>Rules</strong><br>
-					Important rules pertaining to the server and the club as well.<br>
-					<br>
-					<strong>Annoucements</strong><br>
-					Any pings regarding ongoing club events or important news about the club or server.<br>
-					<br>
-					<strong>General</strong><br>
-					Landing channel where newcomers first arrive into the server.<br>
-					<br>
-					<strong>Member</strong><br>
-					Club members' focused chat.<br>
-					<br>
-				</td>
-				<td rowspan="6">
-					There are several types of users in this server.<br>
-					<br>
-					<strong>General</strong><br>
-					Newcomers looking around.<br>
-					<br>
-					<strong>Member</strong><br>
-					Due paying members of the club. They are given access to some channels that non members cannot accessed.<br>
-					<br>
-					<strong>Discord Nep</strong><br>
-					Moderators for the server in case the officers of the club are unable to deal with any issues that may occur in the 
-					server.<br>
-					<br>
-					<strong>Bottom Nep</strong><br>
-					The 3 or 4 officers of the club, Treasurer, Vice-President, Public Relations and Secretary.<br>
-					<br>
-					<strong>Top Nep</strong><br>
-					The President of the club.<br>
-					<br>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<strong>Campus</strong><br>
-					These channels are for any on campus related events for students to receive help with school work or learn Japanese.<br>
-					As well as club related meetings, such as Cosplay Corner and the regular Wednesday meetings.<br>
-					<br>
-				</td>
-				<td>
-					<strong>School</strong><br>
-					General channel for school related discussions, whether its help finding classes, solutions or important events 
-					happening on campus.<br>
-					<br>
-					<strong>Cosplay Corner</strong><br>
-					General discussion chat for Cosplay Corner Members as well as any cosplay projects from other users.<br>
-					<br>
-					<strong>Japanese</strong><br>
-					A channel to help other people learn Japanese with live practice.<br>
-					<br>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<strong>Fun</strong><br>
-					Here are various channels for users to chat about fun related topics, such as gaming, memes, anime, music and so on.<br>
-					<br>
-				</td>
-				<td>
-					<strong>Games</strong><br>
-					General discussion chat for games or for others to find other people to play games with.<br>
-					<br>
-					<strong>Anime & Manga</strong><br>
-					General discussion chat for anime and manga, especially for seasonal shows.<br>
-					<br>
-					<strong>Cons & Merch</strong><br>
-					A channel where other users showcase their wares or talk of local conventions that occurs in the Charlotte area.<br>
-					<br>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<strong>Mobile Games</strong><br>
-					A small selection of channels where users can talked on and on about certain mobile games which merits its own 
-					channel.<br>
-					There use to be a wide amount of channels but due to inactivity or sparse conversations, the officers has reduced
-					the number of channels in this catergory.<br>
-					<br>
-				</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>
-					<strong>Nep Noises</strong><br>
-					Voice channels for meetings, game sessions or just chatting.<br>
-					<br>
-				</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>
-					<strong>Archive</strong><br>
-					Old channels where users no longer post in, but still hold some importance to the club.<br>
-					<br>
-				</td>
-				<td>
-					<strong>KiraKiraCon</strong><br>
-					General planning chat for any members to share details about KKC to anyone else.<br>
-					<br>
-				</td>
-			</tr>
-		</table>
-	</div>
-
 	<br>
 </main>
 
 <footer>
 	<br>
-	<a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+	<a href="https://validator.w3.org/nu/">Validate HTML</a>
 	<br>
-	<a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+	<a href="https://jigsaw.w3.org/css-validator/">Validate CSS</a>
 </footer>
 
 </body>
