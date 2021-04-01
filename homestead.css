@@ -1,0 +1,18 @@
+.charPreview{
+    background-color: aliceblue;
+    width: 250px;
+    height: 375px;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+}
+.charImgPreview{
+    width: 250px;
+    height: 375px
+}
+.gallery{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}

@@ -8,18 +8,14 @@
     margin: auto;
 }
 
-/*Navigation bar*/
-.nav{
+/* Navbar container */
+.navbar {
     background-color: #333;
-    list-style:none;
-    margin:0;
-    padding:0;
     text-align:center;
 }
-.nav li{
-    display:inline;
-}
-.nav a{
+
+/* Links inside the navbar */
+.navbar a, .dropdown-content a {
     display:inline-block;
     color: #f2f2f2;
     text-align: center;
@@ -29,17 +25,49 @@
     font-weight: bold;
     font-size: 22px;
 }
-.nav a:hover {
+/* Links inside the dropdown */
+.dropdown-content a {
+    display: block;
+}
+
+/* The dropdown container */
+.dropdown {
+    display: inline;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 22px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .navbar a.active, .dropdown-content a:hover, .dropdown:hover .dropbtn  {
     background-color: #4CAF50;
     color: black;
 }
-.nav a.active {
-    background-color: #4CAF50;
-    color: black;
-}
-.nav[id="Sub1"] a{
+
+.navbar[id="Sub1"] a{
     font-size: 20px;
 }
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: inline-block;
+} 
 
 .column{
     float: left;
@@ -86,7 +114,6 @@
 }
 .contentBox[id="height"]{
     height: 100vh;
-    
 }
 
 main{
@@ -95,6 +122,9 @@ main{
 
 body{
     background-color: #92cf7b;
+    position: relative;
+    height: auto;
+    min-height: 100%;
 }
 
 h1{
